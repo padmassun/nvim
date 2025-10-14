@@ -19,3 +19,6 @@ map("n", "<C-w>", "<Cmd>BufferClose<CR>", opts)
 -- Save buffer with Ctrl + s and stay in insert mode
 map("i", "<C-s>", "<C-o>:w<CR>", opts)
 map("n", "<C-s>", ":w<CR>", opts)
+
+-- Terminal
+map("n", "<leader>tt", "<cmd>ToggleTerm<cr>", opts)
