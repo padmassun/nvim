@@ -1,5 +1,6 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>cd", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>de", vim.cmd.Ex)
 
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = false }
@@ -17,3 +18,4 @@ map("n", "<C-w>", "<Cmd>BufferClose<CR>", opts)
 
 -- Save buffer with Ctrl + s and stay in insert mode
 map("i", "<C-s>", "<C-o>:w<CR>", opts)
+map("n", "<C-s>", ":w<CR>", opts)
