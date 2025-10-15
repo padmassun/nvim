@@ -7,17 +7,19 @@ See https://github.com/neovim/neovim/blob/master/INSTALL.md
 ## Linux Command
 
 ```sh
-git clone https://github.com/padmassun/nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+git clone --single-branch -b astrovim https://github.com/padmassun/nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
 
 ## Windows Command
 
 CMD:
+
 ```sh
-git clone https://github.com/padmassun/nvim.git "%localappdata%\nvim"
+git clone --single-branch -b astrovim https://github.com/padmassun/nvim.git "%localappdata%\nvim"
 ```
 
 Powershell:
+
 ```sh
-git clone https://github.com/padmassun/nvim.git "${env:LOCALAPPDATA}\nvim"
+git clone --single-branch -b astrovim https://github.com/padmassun/nvim.git "${env:LOCALAPPDATA}\nvim"
 ```
