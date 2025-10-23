@@ -16,4 +16,5 @@ return {
   { import = "astrocommunity.recipes.auto-session-restore" },
   { import = "astrocommunity.bars-and-lines.lualine-nvim" },
   -- import/override with your plugins folder
+  { import = "astrocommunity.recipes.astrolsp-no-insert-inlay-hints" },
 }
