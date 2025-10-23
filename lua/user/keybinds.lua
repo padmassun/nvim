@@ -16,7 +16,7 @@ map("n", "<C-s>", ":w<CR>", opts)
 
 vim.api.nvim_create_user_command("Cppath", function()
   local path = vim.fn.expand "%:p"
-  local dirpath = vim.fn.expand "%:h"
+  local dirpath = vim.fn.expand "%:p:h"
   local cmd = 'cd "' .. dirpath .. '" && python "' .. path .. '"'
   vim.fn.setreg("+", cmd)
   vim.notify('Copied "' .. cmd .. '" to the clipboard!')

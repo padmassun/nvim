@@ -60,7 +60,7 @@ keymap("n", "<C-b>", function()
         .. '" cmd="'
         .. python_cmd
         .. " "
-        .. expand "%"
+        .. expand "%:p"
         .. '"'
     )
   else
