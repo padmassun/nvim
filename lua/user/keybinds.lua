@@ -14,6 +14,10 @@ map("n", "<C-w>", "<Cmd>BufferClose<CR>", opts)
 map("i", "<C-s>", "<C-o>:w<CR>", opts)
 map("n", "<C-s>", ":w<CR>", opts)
 
+-- Move selected lines up/down
+vim.keymap.set("v", "<A-d>", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "<A-e>", ":m '<-2<CR>gv=gv")
+
 vim.api.nvim_create_user_command("Cppath", function()
   local path = vim.fn.expand "%:p"
   local dirpath = vim.fn.expand "%:p:h"
